@@ -1,0 +1,48 @@
+#main {
+    background-color: #d902ee;
+    width: 600px;
+    height: 400px;
+    padding: 5px;
+    border: 5px solid #320d3e;
+    color: beige;
+    display: grid; /* would fill up the farther if possible */
+    grid-template: 1fr 3fr / 1fr;
+    /* ^format: row width/colomn height */
+    /* ^fr: = 1/# of 1fr */
+}
+
+form {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+    padding: 5px;
+}
+
+form > input {
+    background-color: #f162ff;
+    border: 2px solid #320d3e;
+    color:azure;
+}
+
+form > input:hover {
+    background-color: #ffd97d;
+    color: #320d3e;
+}
+
+#main > div { /* > means children of */
+    background-color: #f162ff;
+    border: 2px solid #320d3e;
+    color: green;
+    font-size: 30px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+    
+}
